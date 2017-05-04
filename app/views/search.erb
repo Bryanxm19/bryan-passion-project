@@ -1,0 +1,7 @@
+<h1 class="center">Recipes</h1>
+
+<ul class="center recipes">
+  <% @body['recipes'].each do |recipe| %>
+    <li><a href="/recipes/<%= recipe['recipe_id'] %>"><%= recipe['title'] %></a></li>
+  <% end %>
+</ul>
