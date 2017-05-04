@@ -1,0 +1,76 @@
+#ingredient-instructions {
+  color: gray;
+  font-style: italic;
+}
+
+.center {
+  position: relative;
+  top: 200px;
+  left: 30%;
+}
+
+h1.center {
+  font-size: 250%;
+  position: relative;
+  left: 43%;
+}
+
+
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-item {
+    float: left;
+}
+
+.nav-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #111;
+}
+
+#new-user table tr td, #login-user table tr td {
+  position: relative;
+  left: 60%;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 10px;
+}
+
+#reg-header, #login-header {
+  left: 45%;
+}
+
+.errors-list {
+  left: 40%;
+}
+
+.errors-list li {
+  color: red;
+}
+
+input[name="ingredients"] {
+  width: 30%;
+  height: 25px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  position: relative;
+  left: 18%;
+  width: 100px;
+  border-radius: 10%;
+  background-color: green;
+  color: white;
+}
