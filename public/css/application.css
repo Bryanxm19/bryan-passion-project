@@ -15,6 +15,15 @@ h1.center {
   left: 43%;
 }
 
+ul.recipes {
+  position: relative;
+  left: 35%;
+  font-size: 150%;
+}
+
+ul.recipes li {
+  list-style: none;
+}
 
 #nav-bar {
     list-style-type: none;
