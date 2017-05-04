@@ -20,8 +20,12 @@
 <body>
   <ul id="nav-bar">
     <li class="nav-item"><a href="/">Home</a></li>
-    <li class="nav-item"><a href="/users/new">Register</a></li>
-    <li class="nav-item"><a href="/users/login">Log In</a></li>
+    <% if logged_in? %>
+      <li class="nav-item"><a href="/users/logout">Log Out</a></li>
+    <% else %>
+      <li class="nav-item"><a href="/users/new">Register</a></li>
+      <li class="nav-item"><a href="/users/login">Log In</a></li>
+    <% end %>
   </ul>
   <%= yield %>
 </body>
