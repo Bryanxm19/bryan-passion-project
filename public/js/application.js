@@ -12,7 +12,7 @@ $(document).ready(function() {
     .done(function(response) {
       if($($recipe).hasClass("clicked")) {
         $($recipe).removeClass("clicked");
-        $(".recipes li div#recipe-details").remove();
+        $($recipe).find("div#recipe-details").remove();
       }
       else {
         $($recipe).addClass("clicked");
