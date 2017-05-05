@@ -64,6 +64,19 @@ ul#nav-bar {
   left: 45%;
 }
 
+#recipe-details {
+  position: relative;
+}
+
+#ingredients {
+  position: relative;
+  right: 5%;
+}
+
+#ingredients li {
+  font-size: .7em;
+}
+
 .errors-list {
   left: 40%;
 }
