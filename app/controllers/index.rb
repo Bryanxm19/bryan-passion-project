@@ -16,5 +16,9 @@ get '/recipes/:recipe_id' do
   uri = URI.parse("http://food2fork.com/api/get?key=#{ENV['ACCESS_TOKEN']}&rId=#{params[:recipe_id]}")
   response = Net::HTTP.get_response(uri)
   @recipe = JSON.parse(response.body)['recipe']
-  erb :recipe
+  if request.xhr?
+    erb :_ingredients, layout: false
+  else
+    erb :recipe
+  end
 end
