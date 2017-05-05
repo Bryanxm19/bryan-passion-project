@@ -1,8 +1,5 @@
 <h1 class="center">Ingredients</h1>
 
-<img class="center" src="<%= @recipe['image_url'] %>">
-<ul class="center">
-  <% @recipe['ingredients'].each do |ingredient| %>
-    <li><%= ingredient %></li>
-  <% end %>
-</ul>
+<div class="center">
+<%= erb :_ingredients, lauout: false %>
+</div>

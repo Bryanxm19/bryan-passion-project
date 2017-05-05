@@ -1,0 +1,10 @@
+<div id="recipe-details">
+  <br>
+  <img src="<%= @recipe['image_url'] %>">
+  <ul id="ingredients">
+    <% @recipe['ingredients'].each do |ingredient| %>
+      <li><%= ingredient %></li>
+    <% end %>
+  </ul>
+  <br>
+</div>
